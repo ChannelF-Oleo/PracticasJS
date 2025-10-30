@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Practicas JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Practicas JavaScript para Desarrollo Web</h1>
+    </header>
+    <main>
+      <section>
+        <article class="container">
+          <h2>Ejercicio 1: Eventos</h2>
+          <p>Crear un botón que, al ser clickeado, haga algo</p>
+          <button id="botonUno">Click Aqui</button>
+          <p id="parrafoUno"></p>
+        </article>
+        <article class="container">
+          <h2>Ejercicio 2: Eventos del Mouse</h2>
+          <p>
+            Crear un cuadro que cambie de color cuando el mouse pase por encima
+            y vuelva a su color original cuando el mouse salga.
+          </p>
+          <div class="caja" id="caja"></div>
+        </article>
+        <article class="container">
+          <h2>Ejercicio 3: Eventos como Funciones</h2>
+          <p>Añade el evento desde el script, ver consola</p>
+          <button id="botonDos">Click Aqui</button>
+        </article>
+        <article class="container">
+          <h2>Ejercicio 4: Variable This</h2>
+          <p>Prueba presionando!</p>
+          <button onclick="cambiarColor(this)">Click Aqui</button>
+          <button onclick="cambiarColor(this)">Click Aqui</button>
+          <button onclick="cambiarColor(this)">Click Aqui</button>
+        </article>
+        <article class="container">
+          <h2>Ejercicio 5: Obtener Valores</h2>
+          <p>Ingresa tu nombre y presiona el botón</p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre"/>
+          <button type="submit" id="botonTres" >Enviar</button>
+          <p id="saludo"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 6: Select y Propiedades</h2>
+            <p>Selecciona una opción y presiona el botón</p>
+            <label for="opciones">Estado Civil</label>
+            <select id="opcion">
+                <option value="Soltera">Soltera</option>
+                <option value="Casada">Casada</option>
+                <option value="Viuda">Viuda</option>
+            </select>
+            <button type="submit" id="botonCuatro">Enviar</button>
+            <p id="mensaje"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 7: Validar E-mail</h2>
+            <p>Ingresa tu e-mail y presiona el botón</p>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Ingresa tu e-mail" />
+            <button type="submit" id="botonCinco">Enviar</button>
+            <p id="resultadoEmail"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 8: Restringir Caracteres y limitar tamaño</h2>
+            <input type="text" id="soloNumeros" maxlength="10" placeholder="Escribe aqui, solo numeros" />
+            <button type="submit" id="botonSeis">Enviar</button>
+            <p id="resultado"></p>
+
+        </article>
+        <article class="container">
+            <h2>Ejercicio 9: Objeto Math</h2>
+            <p>Presiona el botón para generar un número aleatorio entre 1 y 100</p>
+            <button type="submit" id="botonSiete">Generar Número</button>
+            <p id="numeroAleatorio"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 10: Fecha y Hora</h2>
+            <p>Presiona el botón para mostrar la fecha y hora actual</p>
+            <button type="submit" id="botonOcho">Mostrar Fecha y Hora</button>
+            <p id="fechaHora"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 11: Temporizadores</h2>
+            <p>Presiona el botón para iniciar un temporizador que actualice cada segundo</p>
+            <button type="submit" id="botonNueve">Iniciar Temporizador</button>
+            <p id="temporizador" class=""></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 12: Corrección de errores</h2>
+
+            <p>Ingresa un número primo</p>
+            <input type="text" id="numeroPrimo" placeholder="Ingresa un número" />
+            <button type="submit" id="botonDiez">Verificar</button> 
+            <p id="resultadoPrimo"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 13: validar contraseña segura</h2>
+            <p>Ingresa una contraseña segura: </p>
+            <label for="contraseña"></label>
+            <input type="text" id="contraseña" placeholder="Ingresa tu contraseña" />
+            <button type="submit" id="botonOnce">Validar</button>
+            <p id="resultadoContrasena"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 14: Eliminar duplicados de un array</h2>
+            <p>Presiona el botón para eliminar duplicados del array</p>
+            <input type="text" id="arrayInput" placeholder="Ingresa números separados por comas"/>
+            <button type="submit" id="botonDoce">Eliminar Duplicados</button>
+            <p id="arraySinDuplicados"></p>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 15: Contardor regresivo</h2>
+            <p>Presiona el botón para iniciar un contador regresivo desde 10</p>
+            <button type="submit" id="botonTrece">Iniciar Contador</button>
+            <div id="contadorRegresivo" class=""></div>
+        </article>
+        <article class="container">
+            <h2>Ejercicio 16: cambiar formatos de texto a titulo</h2>
+            <p id="texto">Este texto es un parrafo, presiona el botón para convertirlo a formato título</p>
+            <button type="submit" id="botonCatorce">Convertir a Título</button>
+
+        </article>
+        <article class="container">
+            <h2>Ejercicio 17: Filtar menores de edad</h2>
+            <p>Este contenido se mostrara dependiendo tu edad</p>
+            <label for="dia">dia:</label>
+            <input type="number" id="dia" placeholder="Ingresa tu dia de nacimiento"/>
+            <label for="mes">Mes:</label>
+            <input type="number" id="mes" placeholder="Ingresa tu mes de nacimiento"/>
+            <label for="año">Año:</label>
+            <input type="number" id="año" placeholder="Ingresa tu año de nacimiento"/>
+            <button type="submit" id="botonQuince">Verificar Edad</button>
+            <p id="verificacionEdad"></p>
+            <div id="contenido"></div>
+        </article>
+
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
